@@ -1,0 +1,17 @@
+{
+  "name": "cosmoalto",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Clayton Collins <claytonccollins@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

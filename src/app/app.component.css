@@ -1,0 +1,84 @@
+li {
+  cursor: pointer;
+  cursor: hand;
+  display: inline-block;
+  z-index: 99;
+}
+
+.nav-item {
+  position: absolute;
+  float: left;
+  z-index: 99;
+  letter-spacing: 3px;
+  display: block;
+
+}
+
+.home {
+  left: 20vw;
+}
+
+.about {
+  left: 40vw;
+}
+
+.music {
+  left: 60vw;
+}
+
+.contact {
+  left: 80vw;
+}
+
+.nav {
+  position: absolute;
+}
+
+/*.click {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}*/
+
+.emojis {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.emoji {
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+
+.emoji h1 {
+  font-size: 50px;
+  z-index: 98;
+}
+
+
+
+@keyframes moveright {
+  50% {
+     transform: translate(120vw, 0);
+  }
+}
+
+@keyframes movedown {
+  50% {
+     transform: translate(0, 120vh);
+  }
+}
+
+@keyframes moveleft {
+  50% {
+     transform: translate(-120vw, 0);
+  }
+}
+
+@keyframes moveup {
+  50% {
+     transform: translate(0, -120vh);
+  }
+}
