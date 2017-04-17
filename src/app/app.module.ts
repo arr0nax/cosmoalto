@@ -11,6 +11,7 @@ import { SplashComponent } from './splash/splash.component';
 import { AboutComponent } from './about/about.component';
 import { MusicComponent } from './music/music.component';
 import { ContactComponent } from './contact/contact.component';
+import { EmojiComponent } from './emoji/emoji.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     SplashComponent,
     AboutComponent,
     MusicComponent,
-    ContactComponent
+    ContactComponent,
+    EmojiComponent
   ],
   imports: [
     BrowserModule,
