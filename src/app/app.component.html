@@ -1,15 +1,19 @@
 
-
-
-  <li (click)='addEmojis()' class=" nav-item home" routerLink=''>home</li>
-  <li (click)='addEmojis()' class=" nav-item about" routerLink='about'>about</li>
-  <li (click)='addEmojis()' class=" nav-item music" routerLink='music'>music</li>
-  <li (click)='addEmojis()' class=" nav-item contact" routerLink='contact'>contact</li>
-  <div class="click" (click)='addEmojis()' (click)="destroyEmoji($event)">
+<li (click)='addEmojis()' class=" nav-item home" routerLink=''>home</li>
+<li (click)='addEmojis()' class=" nav-item about" routerLink='about'>about</li>
+<li (click)='addEmojis()' class=" nav-item music" routerLink='music'>music</li>
+<li (click)='addEmojis()' class=" nav-item contact" routerLink='contact'>contact</li>
+<div class="click" (click)='addEmojis()' (click)="destroyEmoji($event)">
+  <div class="emojicontainer">
 
     <div class='emojis' *ngFor='let emoji of safeEmojis;'>
 
       <div [innerHTML]=emoji></div>
     </div>
-<router-outlet></router-outlet>
+  </div>
+  <div class="routercontainer">
+
+  <router-outlet></router-outlet>
+</div>
+  <footer>{{score}}</footer>
 </div>

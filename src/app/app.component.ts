@@ -54,27 +54,26 @@ export class AppComponent {
       this.safeEmojis.push(this.sanitzer.bypassSecurityTrustHtml(addEmojis));
       this.emojiCount += 1;
     }
+    this.score = this.emojiCount;
+
   }
 
 
   destroyEmoji(event) {
     for (var i=0; i<this.emojiCount; i++){
       let el = document.getElementById('emoji'+i);
-
       window.requestAnimationFrame(function(){
         if (el) {
+
 
         var rect = el.getBoundingClientRect()
         if (Math.abs(rect.top - event.clientY) < 50 && Math.abs(rect.left - event.clientX) < 50) {
           el.parentElement.removeChild(el);
-
         }
       }
       });
 
-
     }
-
 
   }
 }
